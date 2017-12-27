@@ -1,0 +1,29 @@
+html {
+  background: rgba(255,105,0,0.2);
+}
+body {
+  display: block;
+}
+.cleafix:before,
+.cleafix:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+}
+.icon {
+  width: 200px;
+  fill: #00f;
+}
+h1 {
+  color: #9acd32;
+}
+.footer__text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f00;
+}
