@@ -10,20 +10,23 @@ body {
   display: table;
   clear: both;
 }
-.logo {
-  width: 200px;
-  height: 200px;
-}
-.icon {
-  width: 200px;
-  fill: #00f;
-}
 h1 {
   color: #9acd32;
 }
+.app-block__logo {
+  width: 100px;
+}
+.app-block__icon-list__item {
+  width: 200px;
+  fill: #00f;
+}
 .footer__text {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: #f00;
+}
+.header__logo {
+  width: 120px;
+  border: 2px solid #f00;
 }

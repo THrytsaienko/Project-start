@@ -1,11 +1,17 @@
+include ../../node_modules/bemto.pug/bemto
 include ../globals/common
 include ../globals/svg-mixin
 include ../blocks/index
 
+block params
+	- var pageTitle = "Головна"
+
 doctype html
 html
 	head
-		link(rel="stylesheet" href=asset("styles.css"))
+		title= pageTitle
+		block meta
+		block styles
 	body
-		block content
-		script(src=asset("main.js"))
+		block main
+		block scripts

@@ -1,6 +1,4 @@
-mixin b-header()
-    .header
-        .header__logo
-            img.header__logo-image(src='https://google.com/logo.png')
-        .header__menu
-            +b-header-menu()
+mixin b-header(title)
+	+b('header').header
+		+e('h1').title= title
+		+e('img').logo(src=asset('i/logo.png') style="width: 100px;")

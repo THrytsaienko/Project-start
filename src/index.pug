@@ -1,14 +1,8 @@
-extends layouts/root
+extends layouts/main
+
+append params
+	- pageTitle = "Авторизовано"
+	- userAuth = true
 
 block content
-	h1 Hello, World!
-	img.logo(src=asset('i/logo.png'))
-	div.icons
-		+svg-icons('aircraft-take-off')
-		+svg-icons('chat')
-		+svg-icons('home')
-		+svg-icons('magnifying-glass')
-		+svg-icons('star')
-	//- svg.class='user-nav__icon'
-	//- 	use(xlink:href=asset('svg/symbol/svg/sprite.symbol.svg#aircraft-take-off'))
-	+b-footer()
+	+b-app-block()
