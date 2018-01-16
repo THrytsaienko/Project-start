@@ -14,12 +14,7 @@ var processors = [
         browsers: ['last 10 version']
     })
 ];
-// var processors = [
-//     autoprefixer({
-//         browsers: ['last 10 version']
-//     }),
-//     newname()
-// ];
+
 
 // Basic configuration example
 var config = {
