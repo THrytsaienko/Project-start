@@ -1,31 +1,38 @@
 html {
   background: rgba(255,105,0,0.2);
 }
+
 body {
   display: block;
 }
+
 .cleafix:before,
 .cleafix:after {
   content: ' ';
   display: table;
   clear: both;
 }
+
 h1 {
   color: #9acd32;
 }
+
 .app-block__logo {
   width: 100px;
 }
+
 .app-block__icon-list__item {
   width: 200px;
   fill: #00f;
 }
+
 .footer__text {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   color: #f00;
 }
+
 .header__logo {
   width: 120px;
   border: 2px solid #f00;

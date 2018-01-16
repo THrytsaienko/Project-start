@@ -8,6 +8,7 @@ var browserSync = require('browser-sync').create();
 var del = require('del');
 var concat = require('gulp-concat');
 var svgSprite = require('gulp-svg-sprite');
+var gcmq = require('gulp-group-css-media-queries');
 var processors = [
     autoprefixer({
         browsers: ['last 10 version']
@@ -78,6 +79,7 @@ gulp.task('css', function () {
             this.emit('end');
         }))
         .pipe(postcss(processors))
+        .pipe(gcmq())
         .pipe(gulp.dest('build/assets'))
         .pipe(browserSync.stream())
 });
