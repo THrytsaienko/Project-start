@@ -56,7 +56,10 @@ const ignorePug = [
 
 gulp.task('html', function () {
     return gulp.src(['src/**/*.pug', ...ignorePug])
-        .pipe(pug())
+        // .pipe(pug())
+        .pipe(pug({
+            locals: {}
+        }))
         .pipe(gulp.dest('build'))
 });
 

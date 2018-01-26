@@ -1,0 +1,8 @@
+mixin b-features(listServices)
+    +b.features.container
+        +e('h1').title Виберіть категорію
+        +b.cards
+            each item in listServices
+                +e.item
+                    +e('img').img(src= item.url)
+                    +e('p').text= item.title
