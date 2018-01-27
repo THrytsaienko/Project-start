@@ -3,13 +3,17 @@ var pug = require('gulp-pug');
 var stylus = require('gulp-stylus');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-// var newname = require('./src/addNameToProperty');
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var concat = require('gulp-concat');
 var svgSprite = require('gulp-svg-sprite');
 var gcmq = require('gulp-group-css-media-queries');
+
+// var addNameToProperty = require('./addNameToProperty');
+
+
 var processors = [
+    // addNameToProperty(),
     autoprefixer({
         browsers: ['last 10 version']
     })
@@ -56,10 +60,7 @@ const ignorePug = [
 
 gulp.task('html', function () {
     return gulp.src(['src/**/*.pug', ...ignorePug])
-        // .pipe(pug())
-        .pipe(pug({
-            locals: {}
-        }))
+        .pipe(pug())
         .pipe(gulp.dest('build'))
 });
 
